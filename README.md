@@ -112,7 +112,7 @@ Uniquely identifies each row in a table. Cannot be NULL.
 # 9.4 FOREIGN KEY
 Ensures the value in a column matches a value in another table, enforcing referential integrity.
 # 9.5 CHECK
-Ensures that column values meet a specific condition.
+Ensures that column values meet a specific condition
 
 
 
