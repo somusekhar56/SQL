@@ -113,6 +113,74 @@ Uniquely identifies each row in a table. Cannot be NULL.
 Ensures the value in a column matches a value in another table, enforcing referential integrity.
 # 9.5 CHECK
 Ensures that column values meet a specific condition
+# 10 JOINS:
+A JOIN in SQL is a clause that retrieves data by linking rows from multiple tables based on a common column.To combine related data from different tables,avoid data duplication (normalize the database) and retrieve meaningful results by connecting tables.
+
+# We using these two tables:
+<img width="1006" height="607" alt="image" src="https://github.com/user-attachments/assets/4aca3b6d-1c09-4ea3-bbae-d0f3d7186131" />
+
+# 10.1 INNER JOIN:
+Returns only the rows that have matching values in both tables.
+
+# 10.2 LEFT JOIN:
+Returns all rows from the left table and matching rows from the right table. If there’s no match, it shows NULL for the right table columns.
+All rows from the left table (first table in the query),and the matching rows from the right table (second table in the query).If there is no match, the result will show NULL for columns from the right table.
+
+# 10.3 RIGHT JOIN:
+Returns all rows from the right table and matching rows from the left table. If there’s no match, it shows NULL for the left table columns.
+
+# 10.4 FULL JOIN:
+Returns all rows from both tables. Rows without a match in the other table will show NULL.
+
+# 10.5 CROSS JOIN:
+Returns all possible combinations of rows from both tables (Cartesian product).
+
+# 11 SQL Operator:
+An SQL operator is a symbol or keyword used to perform operations on data in SQL queries. Operators are used in conditions, calculations, and logical expressions to filter, compare, or manipulate data.
+
+# 11.1 Arithmetic Operators:
+Used for mathematical calculations like Addition,Subtraction,Multiplication and Division .
+<img width="1119" height="607" alt="image" src="https://github.com/user-attachments/assets/5a1bf1b6-1b3e-40d3-95ff-1c64e6cc164b" />
+
+# 11.2 Comparison Operators:
+Comparison (or Relational) operators are used to compare two values in SQL.They are mostly used in the WHERE clause to filter rows from a table.
+Used to compare values in conditions.
+= Equal to WHERE Salary = 50000
+!= or <> Not equal to WHERE Salary <> 50000
+Greater than WHERE Salary > 50000
+< Less than WHERE Salary < 50000
+= Greater than or equal to WHERE Salary >= 50000
+<= Less than or equal to WHERE Salary <= 50000
+
+# 11.3 Logical Operator:
+Used to combine multiple conditions.
+
+# AND
+Both conditions must be true WHERE DeptID = 101 AND Salary > 50000
+<img width="999" height="295" alt="image" src="https://github.com/user-attachments/assets/ef36f341-2e26-4d53-98c1-55a9f669ea4a" />
+# OR
+Either condition can be true WHERE DeptID = 101 OR Salary > 50000
+<img width="984" height="280" alt="image" src="https://github.com/user-attachments/assets/e4200be2-20a3-40e1-a66b-85711fb6b64b" />
+OR
+Either condition can be true WHERE DeptID = 101 OR Salary > 50000
+<img width="1012" height="296" alt="image" src="https://github.com/user-attachments/assets/3ba24392-9431-41b7-ba96-a529f59520ec" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
