@@ -164,6 +164,20 @@ Either condition can be true WHERE DeptID = 101 OR Salary > 50000
 OR
 Either condition can be true WHERE DeptID = 101 OR Salary > 50000
 <img width="1012" height="296" alt="image" src="https://github.com/user-attachments/assets/3ba24392-9431-41b7-ba96-a529f59520ec" />
+# 12 Procedures:
+A Stored Procedure in SQL is a precompiled group of SQL statements (like SELECT, INSERT, UPDATE, etc.) that are stored in the database and can be executed whenever needed.It helps improve performance, reusability, security, and modularity in database operations.
+# 12.1CREATE PROCEDURE:
+Used to create a new stored procedure for the first time.
+<img width="978" height="491" alt="image" src="https://github.com/user-attachments/assets/42c9981d-059e-44d1-8e3f-65e8e2717936" />
+
+# ALTER PROCEDURE:
+Used to modify or update an existing stored procedure (instead of dropping and recreating it).
+<img width="1000" height="509" alt="image" src="https://github.com/user-attachments/assets/8ed980c2-4684-4f5f-93e8-2b5cbccedce8" />
+
+
+
+
+
 
 
 
