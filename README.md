@@ -174,6 +174,83 @@ Used to create a new stored procedure for the first time.
 Used to modify or update an existing stored procedure (instead of dropping and recreating it).
 <img width="1000" height="509" alt="image" src="https://github.com/user-attachments/assets/8ed980c2-4684-4f5f-93e8-2b5cbccedce8" />
 
+# DROP PROCEDURE:
+Used to delete (remove) an existing stored procedure permanently.
+DROP PROCEDURE is a Data Definition Language (DDL) command that permanently removes a stored procedure from the database.
+<img width="1015" height="289" alt="image" src="https://github.com/user-attachments/assets/4e7c74f4-4c3e-4afa-ad1e-0a15ffe1bd5b" />
+
+# EXECUTE Procedure:
+Used to run (or call) a stored procedure.
+The EXECUTE (or shorthand EXEC) command is used to run a stored procedure that you created using CREATE PROCEDURE.
+<img width="961" height="454" alt="image" src="https://github.com/user-attachments/assets/10020a1d-6349-4797-bbf7-b7c67c754c10" />
+
+# 13 Subquery:
+A subquery is a query inside another query — it can be in the SELECT, FROM, or WHERE clause.A Subquery (or inner query) is a query inside another query.
+SELECT column_name
+FROM table_name
+WHERE column_name operator (SELECT column_name FROM another_table WHERE condition);
+
+# CTE:(Common Table Expression)
+A CTE is like a named temporary result set that exists only for the duration of a single query.It makes queries cleaner, reusable, and easier to read compared to subqueries.
+A CTE (Common Table Expression) is a temporary result set that you can reference within a single SQL statement.
+
+WITH cte_name AS (
+    SELECT column1, column2, ...
+    FROM table_name
+    WHERE condition
+)
+SELECT *
+FROM cte_name
+WHERE some_condition;
+
+# Views:
+A View is a virtual table that is based on the result of an SQL query.It doesn’t store data physically, but instead stores a query that pulls data from one or more tables.So, when you query a view, SQL runs the query behind the scenes and shows you the result like a table.
+
+# Create view:
+
+The CREATE VIEW command is used to create a virtual table based on the result of a SQL query.
+CREATE VIEW view_name AS
+SELECT column1, column2, ...
+FROM table_name
+WHERE condition;
+
+# DROP VIEW:
+
+Used to delete a view permanently from the database.
+The DROP VIEW statement permanently deletes a view definition from the database.
+After dropping, the view can no longer be queried or referenced — though the base tables remain unaffected.
+
+DROP VIEW view_name;
+
+CREATE VIEW HighSalaryEmployees AS
+SELECT EmpName, Department, Salary
+FROM Employee_Details
+WHERE Salary > 55000;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
