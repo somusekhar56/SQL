@@ -263,7 +263,11 @@ SELECT EmpName, Department, Salary,
        
 FROM Employee_Details;
 
+# Normalization:
+Normalization is the process of organizing data in a database to reduce redundancy (repeated data) and improve data integrity.
 
+# Database Normalization:
+Database Normalization is the process of organizing data into multiple related tables to minimize data redundancy (duplication) and ensure data integrity (accuracy and consistency).
 
 
 
