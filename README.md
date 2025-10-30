@@ -227,6 +227,44 @@ SELECT EmpName, Department, Salary
 FROM Employee_Details
 WHERE Salary > 55000;
 
+# Windows Function:
+A Window Function performs a calculation across a set of table rows that are related to the current row.
+Unlike aggregate functions (like SUM() or AVG()), window functions do not collapse rows — they keep each row visible while showing additional calculated values.
+
+# Basic syntax:
+function_name(column_name) 
+
+OVER (PARTITION BY column_name ORDER BY column_name)
+
+# Rank:
+Rank will skip sequences number in case of duplicates
+SELECT EmpName, Department, Salary,
+
+       ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum
+       
+FROM Employee_Details;
+
+# Dense rank:
+Dense rank will not skip if incase of duplicates
+
+SELECT EmpName, Department, Salary,
+
+       DENSE_RANK() OVER (ORDER BY Salary DESC) AS DenseRank
+       
+FROM Employee_Details;
+
+ # Row_number:
+ 
+ROW_NUMBER() gives a unique number starting from 1.
+
+SELECT EmpName, Department, Salary,
+
+       ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum
+       
+FROM Employee_Details;
+
+
+
 
 
 
