@@ -240,7 +240,7 @@ OVER (PARTITION BY column_name ORDER BY column_name)
 Rank will skip sequences number in case of duplicates
 SELECT EmpName, Department, Salary,
 
-       ROW_NUMBER() OVER (ORDER BY Salary DESC) AS RowNum
+       RANK() OVER (ORDER BY Salary DESC) AS RowNum
        
 FROM Employee_Details;
 
